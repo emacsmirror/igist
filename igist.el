@@ -5359,7 +5359,7 @@ initial position in the list."
                           nil
                           t)))
                 (unless (member col choices)
-                  (user-error "Bad language: %s" col))
+                  (user-error "Unexisting column `%s'" col))
                 col)
             (nth next-idx choices))))
     (setq igist-table-current-column next-choice)
